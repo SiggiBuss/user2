@@ -21,10 +21,10 @@ Yii::import('usr.components.*');
 	public function authenticate()
 	{
 		$record=User::model()->findByAttributes(array('username'=>$this->username));
-                echo '<br> username :'.$record->username;
+             /*   echo '<br> username :'.$record->username;
                 echo '<br> is aktiv: '.$record->is_active;
                 echo '<br> is disabled: '.$record->is_disabled;
-                echo '<br> verify : '.$record->verifyPassword($this->password);
+                echo '<br> verify : '.$record->verifyPassword($this->password); */
 		if ($record!==null && $record->is_active && !$record->is_disabled && $record->verifyPassword($this->password)) {
 			$this->_id = $record->id;
 			$this->email = $record->email;

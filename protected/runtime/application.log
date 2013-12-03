@@ -919,3 +919,92 @@ in /Applications/XAMPP/xamppfiles/htdocs/siggi-php/user2/protected/modules/usr/c
 in /Applications/XAMPP/xamppfiles/htdocs/siggi-php/user2/protected/components/UserIdentity.php (71)
 in /Applications/XAMPP/xamppfiles/htdocs/siggi-php/user2/protected/modules/usr/models/PasswordForm.php (84)
 in /Applications/XAMPP/xamppfiles/htdocs/siggi-php/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/03 20:46:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'user2.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/03 20:56:12 [trace] [system.CModule] Loading "log" application component
+2013/12/03 20:56:12 [trace] [system.CModule] Loading "db" application component
+2013/12/03 20:56:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/12/03 20:56:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_migration`
+2013/12/03 20:56:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_migration`
+2013/12/03 20:56:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT `version`, `apply_time`
+FROM `tbl_migration`
+ORDER BY `version` DESC
+2013/12/03 21:01:16 [trace] [system.CModule] Loading "log" application component
+2013/12/03 21:01:16 [trace] [system.CModule] Loading "db" application component
+2013/12/03 21:01:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/12/03 21:01:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_migration`
+2013/12/03 21:01:16 [trace] [system.CModule] Loading "coreMessages" application component
+2013/12/03 21:01:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'user2.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/03 21:01:16 [trace] [system.db.CDbCommand] Executing SQL: CREATE TABLE `tbl_migration` (
+	`version` varchar(255) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2013/12/03 21:01:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `tbl_migration` (`version`, `apply_time`) VALUES (:version, :apply_time)
+2013/12/03 21:01:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT `version`, `apply_time`
+FROM `tbl_migration`
+ORDER BY `version` DESC
+2013/12/03 20:15:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'user2.user_used_passwords' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user_used_passwords`.
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (71)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/03 20:15:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "user_used_passwords" for active record class "UserUsedPassword" cannot be found in the database.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(UserUsedPassword))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('UserUsedPasswor...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php(71): CActiveRecord->__construct()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php(84): UserIdentity->resetPassword('Siggi1965')
+#5 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(161): PasswordForm->resetPassword(Object(UserIdentity))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('register')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/reg...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/user2/index.php/usr/register
+HTTP_REFERER=http://localhost/user2/index.php/usr/register
+---
+2013/12/03 20:26:19 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (75)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/03 20:26:19 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (75)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/03 20:27:06 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CWebUser.php(227): CWebUser->changeIdentity()
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/models/LoginForm.php(71): CWebUser->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/SiteController.php(80): LoginForm->login()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): SiteController->runAction()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/site/login
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/models/LoginForm.php (71)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/SiteController.php (80)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/03 20:40:29 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CWebUser.php(227): CWebUser->changeIdentity()
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/models/LoginForm.php(71): CWebUser->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/SiteController.php(80): LoginForm->login()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): SiteController->runAction()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/site/login
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/models/LoginForm.php (71)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/SiteController.php (80)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)

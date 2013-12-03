@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
 	<li>View file: <code><?php echo __FILE__; ?></code></li>
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul>
-
+ echo 
 <p>For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
