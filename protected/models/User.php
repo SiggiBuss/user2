@@ -54,6 +54,7 @@ class User extends CActiveRecord
 		return array(
 			'userRemoteIdentities' => array(self::HAS_MANY, 'UserRemoteIdentity', 'user_id'),
 			'userUsedPasswords' => array(self::HAS_MANY, 'UserUsedPassword', 'user_id', 'order'=>'set_on DESC'),
+                        'company' => array(self::BELONGS_TO, 'accountOwner', 'company_id'),
 		);
 	}
 
@@ -147,4 +148,15 @@ class User extends CActiveRecord
                 //echo 'in user.php password:'.$this->password;
 		return $this->password !== null && password_verify($password, $this->password);
 	}
+        
+        public function getRole() 
+        {
+                $role = Yii::app()->db->createCommand()
+                        ->select('itemname')
+                        ->from('AuthAssignment')
+                        ->where('userid=:id', array(':id'=>$this->id))
+                        ->queryScalar();
+
+                return $role;
+        }
 }

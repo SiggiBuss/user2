@@ -64,6 +64,7 @@ Yii::import('usr.components.*');
 
 	public function resetPassword($password)
 	{
+            
 		if ($this->_id===null)
 			return false;
 		if (($record=User::model()->findByPk($this->_id))!==null) {
@@ -77,6 +78,24 @@ Yii::import('usr.components.*');
 				'password'=>$hashedPassword,
 				'password_set_on'=>date('Y-m-d H:i:s'),
 			));
+		}
+		return false;
+	}
+        
+        public function saveCompany($subdomain)
+	{
+            
+		if ($this->_id===null)
+			return false;
+		if (($record=User::model()->findByPk($this->_id))!==null) {
+			
+			$company = new AccountOwner;
+			$company->tenant = $subdomain;
+                        $company->name = $subdomain;
+                        $company->save();
+			$record->company_id = $company->id;
+                        $record->save();
+                        return $record->company_id;
 		}
 		return false;
 	}
@@ -281,4 +300,5 @@ Yii::import('usr.components.*');
 		}
 		return false;
 	}
+        
 }

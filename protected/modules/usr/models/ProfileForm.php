@@ -94,6 +94,26 @@ class ProfileForm extends BaseUsrForm
 
 		return Yii::app()->user->login($identity,0);
 	}
+        
+         public function saveCompany($subdomain)
+	{
+            
+		$identity = $this->getIdentity();
+		if ($identity === null)
+			return false;
+                
+		if (($record=User::model()->findByPk($identity->id))!==null) {
+			
+			$company = new AccountOwner;
+			$company->tenant = $subdomain;
+                        $company->name = $subdomain;
+                        $company->save(false);
+			$record->company_id = $company->id;
+                        $record->save();
+                        return $record->company_id;
+		}
+		return false;
+	}
 
 	/**
 	 * Updates the identity with this models attributes and saves it.
@@ -112,6 +132,7 @@ class ProfileForm extends BaseUsrForm
 		));
 		if ($identity->save()) {
 			$this->_identity = $identity;
+                        $this->saveCompany('ahoj');
 			return true;
 		}
 		return false;

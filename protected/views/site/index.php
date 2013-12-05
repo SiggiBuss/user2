@@ -8,13 +8,20 @@ $this->pageTitle=Yii::app()->name;
 
 <p>Congratulations! You have successfully created your Yii application.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
- echo 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<?php
+if (isset(Yii::app()->user->tenant))
+ echo 'tenant :'.Yii::app()->user->tenant.'<br>'; ?>
+
+<?php 
+if (yii::app()->user->checkAccess('Administrator',Yii::app()->user->id))
+    echo 'Administratoild<br>';
+if (yii::app()->user->checkAccess('Steuerberater',Yii::app()->user->id))
+    echo 'Steuerberaterbild<br>';
+if (yii::app()->user->checkAccess('Kunde',Yii::app()->user->id))
+    echo 'Kundebild<br>';
+if (yii::app()->user->checkAccess('Mitarbeiter',Yii::app()->user->id))
+    echo 'Mitarbeiterbild<br>';
+if (yii::app()->user->checkAccess('Teamleiter',Yii::app()->user->id))
+    echo 'Teamleiterbild<br>';
+if (yii::app()->user->checkAccess('Buchhaltung',Yii::app()->user->id))
+    echo 'Buchhaltungbild<br>'; ?>

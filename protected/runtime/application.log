@@ -1008,3 +1008,305 @@ REQUEST_URI=/user2/index.php/site/login
 in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/models/LoginForm.php (71)
 in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/SiteController.php (80)
 in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/05 06:01:51 [error] [exception.CException] exception 'CException' with message 'Property "ProfileForm._id" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(101): CComponent->__get('_id')
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(133): ProfileForm->saveCompany('ahoj')
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(161): ProfileForm->save()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('register')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/reg...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/usr/register
+HTTP_REFERER=http://localhost/user2/index.php/usr/register
+---
+2013/12/05 06:03:48 [error] [exception.CException] exception 'CException' with message 'Property "ProfileForm._id" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(104): CComponent->__get('_id')
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(134): ProfileForm->saveCompany('ahoj')
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(161): ProfileForm->save()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('register')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/reg...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/usr/register
+HTTP_REFERER=http://localhost/user2/index.php/usr/register
+---
+2013/12/05 06:05:40 [error] [php] Object of class UserIdentity could not be converted to string (/Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php:104)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): DefaultController->runAction()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): DefaultController->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/usr/register
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php (104)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php (135)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:06:30 [error] [exception.CException] exception 'CException' with message 'Property "ProfileForm._id" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(105): CComponent->__get('_id')
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(135): ProfileForm->saveCompany('ahoj')
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(161): ProfileForm->save()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('register')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/reg...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/usr/register
+HTTP_REFERER=http://localhost/user2/index.php/usr/register
+---
+2013/12/05 06:08:46 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:08:46 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:08:47 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CWebUser.php(227): CWebUser->changeIdentity()
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(95): CWebUser->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(173): ProfileForm->login()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): DefaultController->runAction()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): DefaultController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/usr/register
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php (95)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (173)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/05 06:09:57 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:09:57 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:12:21 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:12:21 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:12:21 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CWebUser.php(227): CWebUser->changeIdentity()
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(95): CWebUser->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(173): ProfileForm->login()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): DefaultController->runAction()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): DefaultController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/usr/register
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php (95)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (173)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/05 06:14:15 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:14:15 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:14:15 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CWebUser.php(227): CWebUser->changeIdentity()
+#1 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php(95): CWebUser->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php(173): ProfileForm->login()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): DefaultController->actionRegister()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(286): DefaultController->runAction()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): DefaultController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/usr/register
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/ProfileForm.php (95)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (173)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/05 06:15:02 [warning] [application] Failed to set unsafe attribute "password" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 06:15:02 [warning] [application] Failed to set unsafe attribute "set_on" of "UserUsedPassword".
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/components/UserIdentity.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/models/PasswordForm.php (84)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/modules/usr/controllers/DefaultController.php (161)
+2013/12/05 08:26:41 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getRole".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:265
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(225): CComponent->__call('getRole', Array)
+#1 [internal function]: CActiveRecord->__call('getRole', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/RbacController.php(258): User->getRole()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): RbacController->actionTest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('test')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/test')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/user2/index.php/rbac/test
+HTTP_REFERER=http://localhost/user2/
+---
+2013/12/05 08:31:56 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getRole".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:265
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(225): CComponent->__call('getRole', Array)
+#1 [internal function]: CActiveRecord->__call('getRole', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/RbacController.php(258): User->getRole()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): RbacController->actionTest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('test')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/test')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/user2/index.php/rbac/test
+HTTP_REFERER=http://localhost/user2/
+---
+2013/12/05 08:32:04 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getRole".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CComponent.php:265
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/db/ar/CActiveRecord.php(225): CComponent->__call('getRole', Array)
+#1 [internal function]: CActiveRecord->__call('getRole', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/RbacController.php(258): User->getRole()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): RbacController->actionTest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('test')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/test')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/user2/index.php/rbac/test
+HTTP_REFERER=http://localhost/user2/
+---
+2013/12/05 08:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usr/viewprofile".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/viewprofile')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user2/index.php/usr/viewprofile
+---
+2013/12/05 08:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usr/updateprofile".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/updateprofi...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user2/index.php/usr/updateprofile
+---
+2013/12/05 08:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "updateprofile".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('updateprofile')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('updateprofile')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/upd...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/usr/default/updateprofile
+---
+2013/12/05 08:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewProfile".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('viewProfile')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('viewProfile')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/vie...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/usr/default/viewProfile
+---
+2013/12/05 08:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('reset')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('reset')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/res...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/usr/default/reset
+---
+2013/12/05 08:48:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reset".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('reset')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('reset')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/default/res...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/usr/reset
+---
+2013/12/05 08:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usr/index".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user2/index.php/usr/index
+---
+2013/12/05 08:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usr/index".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user2/index.php/usr/index
+---
+2013/12/05 08:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usr/ilogin".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('usr/ilogin')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user2/index.php/usr/ilogin
+---
