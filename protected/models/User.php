@@ -55,6 +55,7 @@ class User extends CActiveRecord
 			'userRemoteIdentities' => array(self::HAS_MANY, 'UserRemoteIdentity', 'user_id'),
 			'userUsedPasswords' => array(self::HAS_MANY, 'UserUsedPassword', 'user_id', 'order'=>'set_on DESC'),
                         'company' => array(self::BELONGS_TO, 'accountOwner', 'company_id'),
+                       
 		);
 	}
 

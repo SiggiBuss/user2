@@ -26,11 +26,11 @@ class DefaultController extends UsrController
 	protected function afterLogin()
 	{
 		$returnUrlParts = explode('/',Yii::app()->user->returnUrl);
-		if(end($returnUrlParts)=='index.php'){
-			$url = '/';
-		}else{
+		//if(end($returnUrlParts)=='index.php'){
+		//	$url = '/';
+		//}else{
 			$url = Yii::app()->user->returnUrl;
-		}
+		//}
 		$this->redirect($url);
 	}
 

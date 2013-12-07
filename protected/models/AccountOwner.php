@@ -45,7 +45,7 @@ class AccountOwner extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, tenant, type, profession, county, currency, street1, street2, city, state, zip', 'required'),
+			//array('name, tenant, type, profession, county, currency, street1, street2, city, state, zip', 'required'),
 			array('type, county, currency', 'numerical', 'integerOnly'=>true),
 			array('name, street1, street2, city', 'length', 'max'=>45),
 			array('tenant', 'length', 'max'=>40),
@@ -66,6 +66,8 @@ class AccountOwner extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                      'currency_code' => array(self::BELONGS_TO, 'CountryCurrency', 'currency'),
+                      'country_code' => array(self::BELONGS_TO, 'CountryCurrency', 'county'),
 		);
 	}
 
@@ -118,4 +120,9 @@ class AccountOwner extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+      /*  public function getCurrencyName()
+        {
+            return $this->currency_code->currency_format.' '.$this->currency_code->country_de;
+        } */
 }

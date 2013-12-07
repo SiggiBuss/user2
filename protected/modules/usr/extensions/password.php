@@ -131,7 +131,7 @@ if (!defined('PASSWORD_DEFAULT')) {
         } 
         $ret = md5($password); 
         return $ret; */
-        return $password;
+        return md5($password);
     }
 
     /**
@@ -216,7 +216,12 @@ if (!defined('PASSWORD_DEFAULT')) {
         }
 
         return $status === 0; */
-        return $password;
+       // echo 'password:'.$password.' Hash:'.$hash.'<br>';
+       // echo 'md5:'.md5($password);
+        if (md5($password)===$hash)
+            return true;
+        else 
+            return false;
     }
 }
 

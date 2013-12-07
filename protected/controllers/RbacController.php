@@ -40,6 +40,14 @@ class RbacController extends CController {
         $auth->createOperation('updatePost','update a post');
         $auth->createOperation('deletePost','delete a post');
         
+        //settings
+        $auth->createOperation('createAccount','Settings erstellen');
+        $auth->createOperation('viewAccount','Settings anschauen');
+        $auth->createOperation('updateAccount','Settings ändern');
+        $auth->createOperation('listAccount','list Settings');
+        $auth->createOperation('manageAccount','manage Settings');
+        $auth->createOperation('deleteAccount','Settings löschen'); 
+        
         //Kunden
         $auth->createOperation('createClient','Kunden erstellen');
         $auth->createOperation('viewClient','Kunden anschauen');
@@ -130,6 +138,8 @@ class RbacController extends CController {
         $role->addChild('commentHours');
         $role->addChild('startTimer');
         $role->addChild('deleteHours');
+        $role->addChild('viewAccount');
+        $role->addChild('listAccount');
         
         $role=$auth->createRole('Teamleiter');
         $role->addChild('Kunde');
@@ -203,6 +213,9 @@ class RbacController extends CController {
         $role->addChild('Teamleiter');
         $role->addChild('Buchhaltung');
         $role->addChild('deleteEstimate');
+        $role->addChild('createAccount');
+        $role->addChild('manageAccount');
+        $role->addChild('deleteClient');
         
         
         
@@ -220,7 +233,7 @@ class RbacController extends CController {
         $auth->assign('Mitarbeiter',9); //Windbühl
         $auth->assign('Teamleiter',10); //Thomas
         $auth->assign('Buchhaltung',11); //Paula
-        $auth->assign('Administrator',2); //Paula
+        $auth->assign('Administrator',2); 
         
         
         echo 'Done.';
