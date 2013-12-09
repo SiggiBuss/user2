@@ -25,7 +25,7 @@ class RbacController extends CController {
             ),
             array(
               'allow',
-              'actions' => array('init', 'test'),
+              'actions' => array('init', 'test','createUser'),
             ),
             array('deny'),
         );
@@ -39,6 +39,9 @@ class RbacController extends CController {
         $auth->createOperation('readPost','read a post');
         $auth->createOperation('updatePost','update a post');
         $auth->createOperation('deletePost','delete a post');
+        
+        //user
+        $auth->createOperation('createUser','neuen User/Mitarbeiter erstellen');
         
         //settings
         $auth->createOperation('createAccount','Settings erstellen');
@@ -216,6 +219,8 @@ class RbacController extends CController {
         $role->addChild('createAccount');
         $role->addChild('manageAccount');
         $role->addChild('deleteClient');
+        $role->addChild('createUser');
+        
         
         
         
@@ -227,13 +232,14 @@ class RbacController extends CController {
         $auth->assign('Kunde',3); //BMW
         $auth->assign('Kunde',5); //Porsche
         $auth->assign('Kunde',4); //Audi
-        $auth->assign('Steuerberater',15); //Frank
+        $auth->assign('Steuerberater',13); //Frank
         $auth->assign('Mitarbeiter',14); //Norbert
-        $auth->assign('Mitarbeiter',13); //Hans
+        $auth->assign('Mitarbeiter',18); //Hans
         $auth->assign('Mitarbeiter',9); //Windbühl
         $auth->assign('Teamleiter',10); //Thomas
         $auth->assign('Buchhaltung',11); //Paula
         $auth->assign('Administrator',2); 
+        $auth->assign('Administrator',12); 
         
         
         echo 'Done.';

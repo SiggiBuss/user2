@@ -27,23 +27,21 @@ class UserController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                        array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'roles'=>array('admin_user'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','view','create','update','CreateUser'),
+				
 			),
+			
+			
+			array('deny'),
 		);
 	}
+        
+        
 
 	/**
 	 * Displays a particular model.
@@ -170,4 +168,25 @@ class UserController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+         public function actionCreateUser()
+        {
+            
+		$model=new User;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['User']))
+		{
+			$model->attributes=$_POST['User'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
+
+		$this->render('create',array(
+			'model'=>$model,
+		));
+	}
+        
 }

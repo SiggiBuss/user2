@@ -49,7 +49,7 @@
                                 array('label'=>'test', 'url'=>array('/rbac/test'),'visible'=>!Yii::app()->user->isGuest,),
                                 array('label'=>'delete Post', 'url'=>array('/rbac/deletePost'),'visible'=>!Yii::app()->user->isGuest,),	
                                 array('label'=>'settings', 'url'=>array('/accountOwner/update/'.$company_id),'visible'=>!Yii::app()->user->isGuest,),
-                                array('label'=>'erstelle user', 'url'=>array('/usr/create'),'visible'=>!Yii::app()->user->isGuest,),	
+                                array('label'=>'erstelle user', 'url'=>array('/accountOwner/createUser'),'visible'=>!Yii::app()->user->isGuest,),	
                                 //array('label'=>'settings2', 'url'=>array('/accountOwner/admin'),'visible'=>!Yii::app()->user->isGuest,),
 				array('label'=>'Login', 'url'=>array('/usr/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/usr/logout'), 'visible'=>!Yii::app()->user->isGuest)

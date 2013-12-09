@@ -30,6 +30,8 @@ Yii::import('usr.components.*');
 			$this->email = $record->email;
 			$this->errorCode=self::ERROR_NONE;
 			$record->saveAttributes(array('last_visit_on'=>date('Y-m-d H:i:s')));
+                        $this->setState('tenant_id',$record->company_id);
+                        $this->setState('tenant',$record->company->name);
 		} else {
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		}

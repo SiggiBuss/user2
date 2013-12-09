@@ -28,8 +28,8 @@ class AccountOwnerController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-                                'roles'=>array('createAccount','updateAccount'), 
+				'actions'=>array('create','update','createUser'),
+                                'roles'=>array('createAccount','updateAccount','createUser'), 
 				//'users'=>array('@'),
 			),
                          array( 'allow',
@@ -168,4 +168,33 @@ class AccountOwnerController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionCreateUser()
+        {
+            
+		$model=new User;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['User']))
+		{
+			$model->attributes=$_POST['User'];                     
+                        $model->is_active = 1; 
+                        $model->company_id = Yii::app()->user->tenant_id; 
+                        echo 'password:'.$model->password.'<-<br>';
+                        $model->password = user::hashPassword($model->password);
+                        echo 'password:'.$model->password.'<-<br>';
+                        
+			//if($model->save())
+                           // $this->redirect(array('/site/index'));
+                        
+		}
+
+		$this->render('_createUser',array(
+			'model'=>$model,
+		));
+	}
+        
+        
 }

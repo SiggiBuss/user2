@@ -334,4 +334,6 @@ class DefaultController extends UsrController
 		$password = $diceware->get_phrase($this->module->dicewareLength, $this->module->dicewareExtraDigit, $this->module->dicewareExtraChar);
 		echo json_encode($password);
 	}
+        
+       
 }

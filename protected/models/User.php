@@ -46,6 +46,8 @@ class User extends CActiveRecord
 			array('activation_key', 'length', 'max'=>128, 'on' => 'search'),
 			array('is_active, is_disabled, email_verified', 'boolean'),
 			array('username, email', 'unique', 'except' => 'search'),
+                        array('email' ,'email'),
+                        array('password' , 'safe'), // just for test resons
 		);
 	}
 
