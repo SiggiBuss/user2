@@ -27,7 +27,9 @@ class RbacController extends CController {
               'allow',
               'actions' => array('init', 'test','createUser'),
             ),
-            array('deny'),
+            array('deny',
+                'message'=>'Ahoj alter Knabe...',
+                ),
         );
     }
     

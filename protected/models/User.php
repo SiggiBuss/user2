@@ -45,7 +45,7 @@ class User extends CActiveRecord
 			array('created_on, updated_on, last_visit_on, password_set_on', 'date', 'format' => array('yyyy-MM-dd', 'yyyy-MM-dd HH:mm', 'yyyy-MM-dd HH:mm:ss'), 'on' => 'search'),
 			array('activation_key', 'length', 'max'=>128, 'on' => 'search'),
 			array('is_active, is_disabled, email_verified', 'boolean'),
-			array('username, email', 'unique', 'except' => 'search'),
+			array('username', 'unique', 'except' => 'search'),
                         array('email' ,'email'),
                         array('password' , 'safe'), // just for test resons
 		);

@@ -3903,3 +3903,179 @@ Stack trace:
 REQUEST_URI=/user2/index.php/accountOwner/update/2
 HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
 ---
+2013/12/09 19:55:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('accountOwner/up...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/accountOwner/update/2
+---
+2013/12/09 22:12:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
+---
+2013/12/09 22:16:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
+---
+2013/12/09 22:25:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
+---
+2013/12/09 22:25:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
+---
+2013/12/09 22:30:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php
+---
+2013/12/09 22:31:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Ahoj alter Knabe...' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Ahoj alter Knab...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php
+---
+2013/12/09 22:31:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Ahoj alter Knabe...' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Ahoj alter Knab...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('deletePost')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('rbac/deletePost')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/user2/index.php/rbac/deletePost
+HTTP_REFERER=http://localhost/user2/index.php/accountOwner/createUser
+---
+2013/12/09 22:42:06 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/AccountOwnerController.php:185) (/Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CHttpRequest.php:789)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/AccountOwnerController.php(190): AccountOwnerController->redirect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/actions/CInlineAction.php(49): AccountOwnerController->actionCreateUser()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(133): AccountOwnerController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CInlineFilter.php(58): AccountOwnerController->filterAccessControl()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(265): AccountOwnerController->runActionWithFilters()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): AccountOwnerController->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CWebApplication->run()
+REQUEST_URI=/user2/index.php/accountOwner/createUser
+in /Applications/XAMPP/xamppfiles/htdocs/user2/protected/controllers/AccountOwnerController.php (190)
+in /Applications/XAMPP/xamppfiles/htdocs/user2/index.php (13)
+2013/12/09 22:45:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('home')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('site/home')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/site/home
+HTTP_REFERER=http://localhost/user2/index.php
+---
+2013/12/09 22:45:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CController.php(270): CController->missingAction('home')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('site/home')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/user2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user2/index.php/site/home
+HTTP_REFERER=http://localhost/user2/index.php/site/index
+---

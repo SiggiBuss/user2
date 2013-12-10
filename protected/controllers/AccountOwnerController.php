@@ -182,12 +182,12 @@ class AccountOwnerController extends Controller
 			$model->attributes=$_POST['User'];                     
                         $model->is_active = 1; 
                         $model->company_id = Yii::app()->user->tenant_id; 
-                        echo 'password:'.$model->password.'<-<br>';
+                       // echo 'password:'.$model->password.'<-<br>';
                         $model->password = user::hashPassword($model->password);
-                        echo 'password:'.$model->password.'<-<br>';
+                        //echo 'password:'.$model->password.'<-<br>';
                         
-			//if($model->save())
-                           // $this->redirect(array('/site/index'));
+                        if($model->save())
+                            $this->redirect(array('/site/index'));
                         
 		}
 

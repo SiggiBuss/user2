@@ -42,14 +42,15 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),'visible'=>Yii::app()->user->isGuest,),
+				array('label'=>'Contact', 'url'=>array('/site/contact'),'visible'=>Yii::app()->user->isGuest,),
                                 //array('label'=>'init', 'url'=>array('/rbac/init'),'visible'=>yii::app()->user->checkAccess('Administrator',Yii::app()->user->id),),
-                                array('label'=>'init', 'url'=>array('/rbac/init')),
+                                array('label'=>'init', 'url'=>array('/rbac/init'),'visible'=>!Yii::app()->user->isGuest,),
                                 array('label'=>'test', 'url'=>array('/rbac/test'),'visible'=>!Yii::app()->user->isGuest,),
                                 array('label'=>'delete Post', 'url'=>array('/rbac/deletePost'),'visible'=>!Yii::app()->user->isGuest,),	
                                 array('label'=>'settings', 'url'=>array('/accountOwner/update/'.$company_id),'visible'=>!Yii::app()->user->isGuest,),
-                                array('label'=>'erstelle user', 'url'=>array('/accountOwner/createUser'),'visible'=>!Yii::app()->user->isGuest,),	
+                                array('label'=>'erstelle user', 'url'=>array('/accountOwner/createUser'), 'visible'=>Yii::app()->user->checkAccess('Administrator')),
+                               
                                 //array('label'=>'settings2', 'url'=>array('/accountOwner/admin'),'visible'=>!Yii::app()->user->isGuest,),
 				array('label'=>'Login', 'url'=>array('/usr/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/usr/logout'), 'visible'=>!Yii::app()->user->isGuest)
